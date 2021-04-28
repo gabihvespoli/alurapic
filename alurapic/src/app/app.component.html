@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+
+<!-- <ap-photo
+  url="https://source.unsplash.com/random"
+  description="randomic"
+></ap-photo>
+<ap-photo
+  url="https://source.unsplash.com/daily"
+  description="random"
+></ap-photo> -->
+
+<ap-photo
+  *ngFor="let photo of photos"
+  [url]="photo.url"
+  [description]="photo.description"
+></ap-photo>
